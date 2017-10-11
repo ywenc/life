@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://code.createjs.com/easeljs-0.8.2.min.js"></script>
+    <script type="text/javascript" src="./assets/Tone.js"></script>
+    <script type="text/javascript" src="./assets/Tone.min.js"></script>
+    <script type="application/javascript" src="lib/bundle.js"></script>
+    <title>life</title>
+
+  </head>
+  <body>
+    <header class="group">
+      <div class="titles">
+        <h1>life</h1>
+        <span style="float:right;">fantastic new solitaire game "life"</span>
+      </div>
+
+      <div class="gameplay">
+        <div class="buttons">
+          <button type="button" name="button" id="start-button">start</button>
+          <button type="button" name="button" id="pause-button" class="hidden">pause</button>
+          <button type="button" name="button" id="reset-button">reset</button>
+          <span class="hidden">generation: </span>
+        </div>
+
+        <div class="presets-container">
+          <span>Presets:</span>
+          <div class="presets group">
+            <div class="preset" id="random-preset"><span id="random-text">random</span></div>
+            <div class="preset"></div>
+            <div class="preset"></div>
+          </div>
+        </div>
+      </div>
+
+      <p class="instructions">
+        click on squares in the grid to make a pattern or choose from one of the preset starting position and augment.
+        press start to see life grow. click on the pause button to pause the simulation. the reset button clears the board.<br>
+        <br>
+          ...Every counter with two or three neighboring counters survives for the next generation.<br>
+          ...Each counter with four or more neighbors dies (is removed) from overpopulation.<br>
+          ...Every counter with one neighbor or none dies from isolation.<br>
+          ...Each empty cell adjacent to exactly three neighbors is a birth cell. A counter is placed on it at the next move.<br>
+      </p>
+
+    </header>
+
+    <div class="canvas-container">
+      <canvas id="background" class=""></canvas>
+      <canvas id="easel"></canvas>
+    </div>
+
+    <div class="info">
+      This month we consider Conway's latest brainchild, a fantastic solitaire pastime he calls "life". Because of its analogies with the rise, fall and alternations of a society of living organisms, it belongs to a growing class of what are called "simulation games"--games that resemble real-life processes... <br>meet three desiderata:<br>
+
+      There should be no initial pattern for which there is a simple proof that the population can grow without limit.
+      There should be initial patterns that apparently do grow without limit.
+      There should be simple initial patterns that grow and change for a considerable period of time before coming to end in three possible ways: <br>fading away completely (from overcrowding or becoming too sparse), settling into a stable configuration that remains unchanged thereafter, or entering an oscillating phase in which they repeat an endless cycle of two or more periods.
+    <br>...The rules are:<br>
+
+      <br>...Every counter with two or three neighboring counters survives for the next generation.
+      <br>...Each counter with four or more neighbors dies (is removed) from overpopulation. Every counter with one neighbor or none dies from isolation.
+      <br>...Each empty cell adjacent to exactly three neighbors--no more, no fewer--is a birth cell. A counter is placed on it at the next move.
+    <br>...all births and deaths occur simultaneously. Together they constitute a single generation or, as we shall call it, a "move" in the complete "life history" of the initial configuration...The same procedure is repeated to produce subsequent generations. It should be clear why counters of two colors are needed...newborn counters play no role in causing other deaths and birth...Mistakes are very easy to make, particularly when first playing the game…
+
+      <br>Conway conjectures that no pattern can grow without limit.
+    </div>
+
+  </body>
+</html>
