@@ -19,23 +19,6 @@
         <span style="float:right;">fantastic new solitaire game "life"</span>
       </div>
 
-      <div class="gameplay">
-        <div class="buttons">
-          <button type="button" name="button" id="start-button">start</button>
-          <button type="button" name="button" id="pause-button" class="hidden">pause</button>
-          <button type="button" name="button" id="reset-button">reset</button>
-          <span class="hidden">generation: </span>
-        </div>
-
-        <div class="presets-container">
-          <span>Presets:</span>
-          <div class="presets group">
-            <div class="preset" id="random-preset"><span id="random-text">random</span></div>
-            <div class="preset"></div>
-            <div class="preset"></div>
-          </div>
-        </div>
-      </div>
 
       <p class="instructions">
         click on squares in the grid to make a pattern or choose from one of the preset starting position and augment.
@@ -48,6 +31,24 @@
       </p>
 
     </header>
+
+    <div class="gameplay">
+      <div class="buttons">
+        <button type="button" name="button" id="start-button">start</button>
+        <button type="button" name="button" id="pause-button" class="hidden">pause</button>
+        <button type="button" name="button" id="reset-button">reset</button>
+        <span class="hidden">generation: </span>
+      </div>
+
+      <div class="presets-container">
+        <span>Presets:</span>
+        <div class="presets group">
+          <div class="preset" id="random-preset"><span id="random-text">random</span></div>
+          <div class="preset"></div>
+          <div class="preset"></div>
+        </div>
+      </div>
+    </div>
 
     <div class="canvas-container">
       <canvas id="background" class=""></canvas>

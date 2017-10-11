@@ -16,6 +16,7 @@ h1 {
   margin: 0 auto;
 	display: block;
   z-index: -1;
+  left: 0
 }
 
 
@@ -30,8 +31,8 @@ h1 {
 header {
   display: block;
   position: relative;
-  height: 135px;
-  margin-bottom: 40px;
+  height: 145px;
+  margin-bottom: 30px;
 }
 
 .titles {
@@ -40,19 +41,12 @@ header {
   flex-direction: column;
 }
 
-.instructions {
-  float: right;
-  width: 60%;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-}
-
 .gameplay {
-  width: 40%;
   float: left;
   box-sizing: border-box;
   padding: 25px;
+  margin: 0;
+  width: 220px;
 }
 
 .preset {
@@ -85,4 +79,30 @@ header {
   display: block;
   font-weight: 700;
   cursor: default;
+}
+
+.instructions {
+  float: right;
+  width: calc(95% - 250px);
+  min-width: 650px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+}
+
+@media (min-width: 1075px ) {
+  .gameplay {
+    position: absolute;
+    top: 0;
+    left: 280px;
+  }
+
+
+  .instructions {
+    width: calc(95% - 370px);
+  }
+
+  #background {
+    left: auto;
+  }
 }
