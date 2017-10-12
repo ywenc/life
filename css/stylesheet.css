@@ -15,7 +15,7 @@ h1 {
   position: absolute;
   margin: 0 auto;
 	display: block;
-  z-index: -1;
+  z-index: -2;
   left: 0
 }
 
@@ -24,8 +24,7 @@ h1 {
   /*border: 1px solid #a9a9a9;*/
   /*margin: 0 auto;*/
   display: block;
-  box-sizing: border-box;
-  float: left;
+  margin: 0;
 }
 
 header {
@@ -83,7 +82,7 @@ header {
 
 .instructions {
   float: right;
-  width: calc(95% - 250px);
+  width: calc(95% - 280px);
   min-width: 650px;
   bottom: 0;
   right: 0;
@@ -99,7 +98,7 @@ header {
 
 
   .instructions {
-    width: calc(95% - 370px);
+    width: calc(95% - 390px);
   }
 
   #background {
