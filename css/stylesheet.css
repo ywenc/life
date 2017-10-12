@@ -7,7 +7,7 @@ h1 {
   margin: 0 auto;
 	display: flex;
 	justify-content: center;
-
+  height: calc(100vh - 170px);
 }
 
 #background {
@@ -50,11 +50,17 @@ header {
   width: 220px;
 }
 
+.presets {
+  display: flex;
+  flex-wrap: wrap;
+  width: 135px;
+}
+
 .preset {
   margin: 5px 5px 0 0;
   float: left;
-  width: 25px;
-  height:25px;
+  width: 35px;
+  height: 35px;
   border: 2px solid black;
 }
 
@@ -75,8 +81,8 @@ header {
 }
 
 #random-text {
-  transform: rotate(-45deg) translate(-9px, 5px);
-  font-size: 8px;
+  transform: rotate(-45deg) translate(-11px, 7px);
+  font-size: 11px;
   display: block;
   font-weight: 700;
   cursor: default;
