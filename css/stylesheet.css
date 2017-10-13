@@ -129,11 +129,11 @@ header {
 
 .instructions {
   float: left;
-  width: calc(95% - 290px);
+  width: 95%;
   bottom: 0;
   right: 0;
   margin-top: 20px;
-  min-width: 440px;
+  min-width: 400px;
 }
 
 @media (min-width: 1075px ) {
@@ -175,5 +175,11 @@ header {
 
   .canvas-container {
     margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 450px;) {
+  #volume-button {
+    display: none;
   }
 }
