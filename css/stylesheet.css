@@ -177,7 +177,9 @@ header {
     margin: 0 auto;
   }
 }
-/*
+
 @media screen and (max-width: 460px) {
-  volum
-}*/
+  #volume-button {
+    display: none;
+  }
+}
