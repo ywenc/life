@@ -21,16 +21,17 @@
         <span style="float:right;">fantastic new solitaire game "life"</span>
       </div>
 
-
-      <p class="instructions">
-        click on squares in the grid to make a pattern or choose from one of the preset starting position and augment.
-        press start to see life grow. click on the pause button to pause the simulation. the reset button clears the board.<br>
-        <br>
-          ...Every counter with two or three neighboring counters survives for the next generation.<br>
-          ...Each counter with four or more neighbors dies (is removed) from overpopulation.<br>
-          ...Every counter with one neighbor or none dies from isolation.<br>
-          ...Each empty cell adjacent to exactly three neighbors is a birth cell. A counter is placed on it at the next move.<br>
-      </p>
+      <div class="instructions-container">
+        <p class="instructions">
+          click on squares in the grid to make a pattern or choose from one of the preset starting position and augment.
+          press start to see life grow. click on the pause button to pause the simulation. the reset button clears the board.<br>
+          <br>
+          ...Every counter with 2 or 3 neighboring counters survives for the next generation.<br>
+          ...Each counter with 4 or more neighbors dies (is removed) from overpopulation.<br>
+          ...Every counter with 1 neighbor or none dies from isolation.<br>
+          ...Each empty cell adjacent to exactly 3 neighbors is a birth cell. A counter is placed on it at the next move.<br>
+        </p>
+      </div>
 
     </header>
 
@@ -57,7 +58,7 @@
       </div>
     </div>
 
-    <div class="canvas-container">
+    <div class="canvas-container group">
       <canvas id="background" class=""></canvas>
       <canvas id="easel"></canvas>
     </div>

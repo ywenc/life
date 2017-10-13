@@ -32,7 +32,7 @@ h1 {
 header {
   display: block;
   position: relative;
-  height: 145px;
+  height: auto;
   margin-bottom: 30px;
 }
 
@@ -47,13 +47,13 @@ header {
   box-sizing: border-box;
   padding: 25px;
   margin: 0;
-  width: 220px;
+  width: 100%;
 }
 
 .presets {
   display: flex;
   flex-wrap: wrap;
-  width: 135px;
+  width: 100%;
 }
 
 .preset {
@@ -62,6 +62,27 @@ header {
   width: 35px;
   height: 35px;
   border: 2px solid black;
+}
+
+@media (min-width: 460px ) {
+  .presets {
+    display: flex;
+    flex-wrap: wrap;
+    width: 135px;
+  }
+
+  .preset {
+    margin: 5px 5px 0 0;
+    float: left;
+    width: 35px;
+    height: 35px;
+    border: 2px solid black;
+  }
+
+  .gameplay {
+    width: 220px;
+  }
+
 }
 
 .presets-container {
@@ -88,13 +109,17 @@ header {
   cursor: default;
 }
 
+.instructions-container {
+  width: 100%;
+}
+
 .instructions {
-  float: right;
-  width: calc(95% - 280px);
+  float: left;
+  width: calc(95% - 290px);
   min-width: 650px;
   bottom: 0;
   right: 0;
-  position: absolute;
+  margin-top: 20px;
 }
 
 @media (min-width: 1075px ) {
@@ -104,9 +129,10 @@ header {
     left: 280px;
   }
 
-
-  .instructions {
+  .instructions,
+  .instructions-container {
     width: calc(95% - 390px);
+    float: right;
   }
 
   #background,
