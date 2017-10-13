@@ -133,7 +133,7 @@ header {
   bottom: 0;
   right: 0;
   margin-top: 20px;
-  min-width: 450px;
+  min-width: 440px;
 }
 
 @media (min-width: 1075px ) {
@@ -160,5 +160,20 @@ header {
   #background,
   #easel {
     left: auto;
+  }
+
+  .canvas-container {
+    margin: 0 auto;
+    margin-left: 100px;
+  }
+
+  .game-container {
+    margin: 0 auto;
+    width: calc(100vw - 80px);
+    height: calc(100vh - 120px);
+  }
+
+  .canvas-container {
+    margin: 0 auto;
   }
 }
