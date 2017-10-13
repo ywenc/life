@@ -2,14 +2,6 @@ h1 {
   font-size: 100px;
 }
 
-.canvas-container {
-  position: relative;
-  margin: 0 auto;
-	display: flex;
-	justify-content: center;
-  height: calc(100vh - 170px);
-}
-
 #background {
   background: #000;
   position: absolute;
@@ -64,6 +56,18 @@ header {
   border: 2px solid black;
 }
 
+.game-container {
+  height: calc(100vh - 90px);
+  width: calc(100vw - 50px);
+  margin: 0 auto;
+}
+
+.canvas-container {
+  position: relative;
+	display: block;
+  margin: 180px auto;
+}
+
 @media (min-width: 460px ) {
   .presets {
     display: flex;
@@ -83,6 +87,16 @@ header {
     width: 220px;
   }
 
+  .canvas-container {
+    margin: 0 auto;
+    margin-left: 100px;
+  }
+
+  .game-container {
+    margin: 0 auto;
+    width: calc(100vw - 180px);
+    height: calc(100vh - 120px);
+  }
 }
 
 .presets-container {
